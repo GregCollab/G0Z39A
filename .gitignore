@@ -1,4 +1,6 @@
 .DS*
-__*
+__pycache__*
 .env*
 env*
+.ipynb*
+dist/*

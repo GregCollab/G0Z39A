@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modern-data-analytics-kuleuven"
+version = "0.1.0"
+description = "Example PyPi project for the course of Modern Data Analytics at KU Leuven"
+authors = [{ name = "Ruben Kerkhofs", email = "ruben.kerkhofs@kuleuven.be" }]
+license = { file = "license" }
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Z39CE.htm#activetab=doelstellingen_idp1495408"
