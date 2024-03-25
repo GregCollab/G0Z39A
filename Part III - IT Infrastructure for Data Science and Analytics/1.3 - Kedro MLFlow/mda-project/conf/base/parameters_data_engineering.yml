@@ -1,0 +1,11 @@
+# This is a boilerplate parameters config generated for pipeline 'data_engineering'
+# using Kedro 0.19.3.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.3/configuration/parameters.html
+data-feed:
+  size: 1000
+
+split:
+  test-size: 0.2
+  seed: 12345

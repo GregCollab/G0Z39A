@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mda_project"
+readme = "README.md"
+dynamic = [ "dependencies", "version",]
+
+[project.scripts]
+mda-project = "mda_project.__main__:main"
+
+[tool.kedro]
+package_name = "mda_project"
+project_name = "MDA Project"
+kedro_init_version = "0.19.3"
+tools = [ "None",]
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.dependencies]
+file = "requirements.txt"
+
+[tool.setuptools.dynamic.version]
+attr = "mda_project.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false

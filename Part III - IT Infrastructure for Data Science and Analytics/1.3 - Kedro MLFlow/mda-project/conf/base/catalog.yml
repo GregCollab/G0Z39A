@@ -1,0 +1,32 @@
+
+applications:
+  type: pandas.CSVDataset
+  filepath: data/applications.csv
+
+X_train:
+  type: pandas.CSVDataset
+  filepath: data/X_train.csv
+
+X_train_resampled:
+  type: pandas.CSVDataset
+  filepath: data/X_train_resampled.csv
+
+X_test:
+  type: pandas.CSVDataset
+  filepath: data/X_test.csv
+
+y_train:
+  type: pandas.CSVDataset
+  filepath: data/y_train.csv
+
+y_train_resampled:
+  type: pandas.CSVDataset
+  filepath: data/y_train_resampled.csv
+
+y_test:
+  type: pandas.CSVDataset
+  filepath: data/y_test.csv
+
+model:
+  type: pickle.PickleDataset
+  filepath: data/model.pkl

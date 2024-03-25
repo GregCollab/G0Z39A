@@ -1,0 +1,18 @@
+# This is a boilerplate parameters config generated for pipeline 'feature_engineering'
+# using Kedro 0.19.3.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.3/configuration/parameters.html
+transformer:
+  drop-features:
+    - submission_time
+  num-features:
+    - age
+    - education-num
+    - capital-gain
+    - capital-loss
+    - hours-per-week
+    - fnlwgt
+  cat-features:
+    - workclass
+    - marital-status
